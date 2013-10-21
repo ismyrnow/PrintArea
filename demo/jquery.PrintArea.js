@@ -123,8 +123,8 @@
         elements.each(function() {
             var ele = getFormData( $(this) );
 
-            var attributes = ""
-            for ( var x in attrs )
+            var attributes = "";
+            for ( var x = 0; x < attrs.length; x++ )
             {
                 var eleAttr = $(ele).attr( attrs[x] );
                 if ( eleAttr ) attributes += (attributes.length > 0 ? " ":"") + attrs[x] + "='" + eleAttr + "'";
